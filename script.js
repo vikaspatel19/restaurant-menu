@@ -19,5 +19,5 @@ function getCheckBoxes(checkBoxName){
     sgst.innerHTML = (totalAmount*9)/100;
     cgst.innerHTML = (totalAmount*9)/100;
     
-    document.getElementById('grand_total').innerHTML = totalAmount + ((totalAmount*9)/100) + (totalAmount*9)/100;
+    document.getElementById('grand_total').innerHTML = totalAmount + ((totalAmount*9)/100) + (totalAmount*9)/100
 }

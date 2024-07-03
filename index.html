@@ -15,7 +15,7 @@
         <h3 class="menu__heading">
             Menu
         </h3>
-        <form>
+        <form class="menu-form">
             <div class="menu_item">
                 <input type="checkbox" id="daal-tadka" name="menuItem" value="500">
                 <label for="daal-tadka" class="menu_item_name"><span>Daal Tadka</span> <span>Rs. 500</span></label>
@@ -37,20 +37,23 @@
                 <label for="paneer-jariyali-tikka" class="menu_item_name"><span>Paneer hariyali tikka</span> <span>Rs. 450</span></label>
             </div>
 
-            <div class="total-row">
-                <label class="total-label"><span>Total</span>  <div><span id="total"></span></div></label>
+            <div class="all-total">
+                <div class="total-row">
+                    <label class="total-label"><span>Total</span>  <div><span id="total"></span></div></label>
+                </div>
+    
+                <div class="total-row">
+                    <label class="total-label"><span>Tax 9%(SGST)</span> <div><span id="tax_sgst"></span></div></label>
+                </div>
+                <div class="total-row">
+                    <label class="total-label"><span>Tax 9%(CGST)</span> <div><span id="tax_cgst"></span></div></label>
+                </div>
+                <div class="total-row">
+                    <label class="total-label"><span>Grand Total</span> <div><span id="grand_total"></span></div></label>
+                </div>
             </div>
-
-            <div class="total-row">
-                <label class="total-label"><span>Tax 9%(SGST)</span> <div><span id="tax_sgst"></span></div></label>
-            </div>
-            <div class="total-row">
-                <label class="total-label"><span>Tax 9%(CGST)</span> <div><span id="tax_cgst"></span></div></label>
-            </div>
-            <div class="total-row">
-                <label class="total-label"><span>Grand Total</span> <div><span id="grand_total"></span></div></label>
-            </div>
-            <input type="button" value="Order Now" id="order" class="btn btn-order" onclick="getCheckBoxes('menuItem');">
+            
+            <input type="button" value="Total" id="order" class="btn btn-order" onclick="getCheckBoxes('menuItem');">
 
         </div>
 
