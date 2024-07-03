@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="menu">
+        <h3 class="menu__heading">
+            Menu
+        </h3>
+        <form>
+            <div class="menu_item">
+                <input type="checkbox" id="daal-tadka" name="menuItem" value="500">
+                <label for="daal-tadka" class="menu_item_name"><span>Daal Tadka</span> <span>Rs. 500</span></label>
+            </div>
+            <div class="menu_item">
+                <input type="checkbox" id="daal-rice" name="menuItem" value="150">
+                <label for="daal-rice" class="menu_item_name"><span>Daal Rice</span> <span>Rs. 150</span></label>
+            </div>
+            <div class="menu_item">
+                <input type="checkbox" id="paneer-pakoda" name="menuItem" value="200">
+                <label for="paneer-pakoda" class="menu_item_name"><span>Paneer Pakoda</span> <span>Rs. 200</span></label>
+            </div>
+            <div class="menu_item">
+                <input type="checkbox" id="soup" name="menuItem" value="100">
+                <label for="paneer-pakoda" class="menu_item_name"><span>Veg Soup</span> <span>Rs. 100</span></label>
+            </div>
+            <div class="menu_item">
+                <input type="checkbox" id="paneer-jariyali-tikka" name="menuItem" value="450">
+                <label for="paneer-jariyali-tikka" class="menu_item_name"><span>Paneer hariyali tikka</span> <span>Rs. 450</span></label>
+            </div>
+
+            <div class="total-row">
+                <label class="total-label"><span>Total</span>  <div><span id="total"></span></div></label>
+            </div>
+
+            <div class="total-row">
+                <label class="total-label"><span>Tax 9%(SGST)</span> <div><span id="tax_sgst"></span></div></label>
+            </div>
+            <div class="total-row">
+                <label class="total-label"><span>Tax 9%(CGST)</span> <div><span id="tax_cgst"></span></div></label>
+            </div>
+            <div class="total-row">
+                <label class="total-label"><span>Grand Total</span> <div><span id="grand_total"></span></div></label>
+            </div>
+            <input type="button" value="Order Now" id="order" class="btn btn-order" onclick="getCheckBoxes('menuItem');">
+
+        </div>
+
+
+        </form>
+    </div>
+
+    <script src="script.js">  </script>
+</body>
+</html>
